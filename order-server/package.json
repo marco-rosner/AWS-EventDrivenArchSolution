@@ -1,0 +1,33 @@
+{
+  "name": "order-server",
+  "version": "1.0.0",
+  "description": "A microservice to process the orders",
+  "main": "src/index.js",
+  "repository": "https://github.com/marco-rosner/AWS-EventDrivenArchSolution.git",
+  "author": "Marco Rosner",
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest",
+    "lint": "eslint . --ext .js"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "joi": "^17.12.2",
+    "mongoose": "^8.2.4",
+    "xss-clean": "^0.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "prettier": "^3.2.5"
+  }
+}
