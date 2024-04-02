@@ -8,11 +8,13 @@ A hands-on project to implement an Event Driven Architecture solution using Node
 
 - Model
 - MongoDB
-- Post route
+- Save Order
 - Docker compose
+- Send Event to SNS
 - Validation
 - Monitoring
 - Logging
+- Tests
 
 ## SNS
 
