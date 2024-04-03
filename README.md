@@ -4,12 +4,16 @@ A hands-on project to implement an Event Driven Architecture solution using Node
 
 ## Order Server
 
+A microservice that will receive and store the order and send it to SNS
+
+### Run using Docker Compose
+
+```sh
+docker-compose up -d
+```
+
 ### TODO
 
-- Model
-- MongoDB
-- Save Order
-- Docker compose
 - Send Event to SNS
 - Validation
 - Monitoring
