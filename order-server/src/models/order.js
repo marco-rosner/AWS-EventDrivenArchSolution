@@ -4,6 +4,7 @@ const { Schema } = mongoose
 const orderSchema = new Schema({
     id: { type: 'string', required: true, index: 1 },
     price: { type: 'number', required: true },
+    region: { type: 'string', enum: ['latam', 'us', 'euro'], default: 'latam' },
     status: { type: 'string', enum: ['new', 'confirmed'], default: 'new' },
 }, { timestamps: true })
 

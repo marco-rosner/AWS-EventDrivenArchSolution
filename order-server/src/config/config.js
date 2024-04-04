@@ -26,4 +26,10 @@ function createConfig(configPath) {
     }
 }
 
-module.exports = { createConfig }
+const SNS_ORDER_ARN = {
+    'latam': 'arn:aws:sns:us-east-2:842019655683:Order-Latam',
+    'us': 'arn:aws:sns:us-east-2:842019655683:Order-US',
+    'euro': 'arn:aws:sns:us-east-2:842019655683:Order-Euro',
+}
+
+module.exports = { createConfig, SNS_ORDER_ARN }
