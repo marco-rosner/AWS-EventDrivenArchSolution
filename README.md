@@ -14,7 +14,6 @@ docker-compose up -d
 
 ### TODO
 
-- Send Event to SNS
 - Validation
 - Monitoring
 - Logging
@@ -22,15 +21,11 @@ docker-compose up -d
 
 ## SNS
 
-### TODO
-
-- Distribute trafic - BRT / US / Europe queues
+There are three topics to distribute the traffic based in the regions (Latam, US and Euro). To check the configuration, access the order-sns folder.
 
 ## SQS
 
-### TODO
-
-- Create BRT / US / Europe queues
+There are three queues (Latam, US and Euro) that will be responsible to store temporary the message before the apropriated lambda function could consume and remove the message. To check the configuration, access the order-sqs folder.
 
 ## Lambda
 
