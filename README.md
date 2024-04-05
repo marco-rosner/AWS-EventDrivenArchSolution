@@ -29,14 +29,8 @@ There are three queues (Latam, US and Euro) that will be responsible to store te
 
 ## Lambda
 
-### TODO
-
-- Read queue
-- Confirm payment
-- Store order in S3
+The lambda function receives all the messages from the SQS (Latam, US and Euro), store the orders in the S3 and send a confirmation email through SNS.
 
 ## S3
 
-### TODO
-
-- Create S3 to store orders
+S3 was created to store all the orders, in json format, as a transaction receipt.
