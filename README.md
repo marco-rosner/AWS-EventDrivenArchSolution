@@ -12,6 +12,18 @@ A microservice that will receive and store the order and send it to SNS
 docker-compose up -d
 ```
 
+### Run in standalone mode
+
+Run the MongoDB image
+```sh
+docker run --network="host" --rm -p 27017:27017 mongo
+```
+
+Run Order Server
+```sh
+cd order-server && yarn start
+```
+
 ### TODO
 
 - Validation
