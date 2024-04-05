@@ -2,6 +2,8 @@
 
 A hands-on project to implement an Event Driven Architecture solution using NodeJS/ExpressJS and AWS services (SNS, SQS, Lambda, and S3)
 
+![Event Driven Architecture](./EventDrivenArchDiagram.png?raw=true "Event Driven Architecture")
+
 ## Order Server
 
 A microservice that will receive and store the order and send it to SNS
