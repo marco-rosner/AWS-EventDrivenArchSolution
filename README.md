@@ -26,13 +26,6 @@ Run Order Server
 cd order-server && yarn start
 ```
 
-### TODO
-
-- Validation
-- Monitoring
-- Logging
-- Tests
-
 ## SNS
 
 There are three topics to distribute the traffic based in the regions (Latam, US and Euro). To check the configuration, access the order-sns folder.
@@ -48,3 +41,11 @@ The lambda function receives all the messages from the SQS (Latam, US and Euro),
 ## S3
 
 S3 was created to store all the orders, in json format, as a transaction receipt.
+
+### TODO
+
+#### Order Server
+- Validation
+- Monitoring
+- Logging
+- Tests
