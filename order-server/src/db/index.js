@@ -26,8 +26,8 @@ db.on('error', (err) => {
     mongoose.disconnect()
 })
 
-db.on('disconnected', (err) => {
-    console.lon('MongoDB disconnected!')
+db.on('disconnected', () => {
+    console.log('MongoDB disconnected!')
     init({ mongo: { uri: mongoURI } })
 })
 
